@@ -1,0 +1,16 @@
+{
+  "lessons": [
+    {
+      "id": 1,
+      "title": "Lesson 1: Diatonic 7th Chords in F",
+      "videoFile": "Jazz - A - 01.mp4",
+      "description": "Learn about diatonic 7th chords"
+    },
+    {
+      "id": 2,
+      "title": "Lesson 2: II-V-I Progression",
+      "videoFile": "Jazz - A - 02.mp4",
+      "description": "Master the II-V-I progression"
+    }
+  ]
+}
