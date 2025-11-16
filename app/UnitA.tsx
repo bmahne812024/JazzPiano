@@ -26,6 +26,7 @@ export default function UnitA() {
                                 title: lesson.title,
                                 videoFile: lesson.videoFile,
                                 description: lesson.description,
+                                subtitles: JSON.stringify(lesson.subtitles || []),
                             },
                         }}
                         asChild

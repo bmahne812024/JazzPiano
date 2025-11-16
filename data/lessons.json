@@ -4,18 +4,27 @@
       "id": 1,
       "title": "Lesson 1: Diatonic 7th Chords in F",
       "videoFile": "Jazz - A - 01.mp4",
+      "subtitles": [
+        { "language": "en", "label": "English", "file": "Jazz - A - 01.vtt" }
+      ],
       "description": "Learn about diatonic 7th chords"
     },
     {
       "id": 2,
       "title": "Lesson 2: II-V-I Progression",
       "videoFile": "Jazz - A - 02.mp4",
+      "subtitles": [
+        { "language": "en", "label": "English", "file": "Jazz - A - 02.vtt" }
+      ],
       "description": "Master the II-V-I progression"
     },
     {
       "id": 3,
       "title": "Lesson 3: Minor II-V-I Progression",
       "videoFile": "Jazz - A - 03.mp4",
+      "subtitles": [
+        { "language": "en", "label": "English", "file": "Jazz - A - 03.vtt" }
+      ],
       "description": "Explore the minor II-V-I progression"
     }
   ]
