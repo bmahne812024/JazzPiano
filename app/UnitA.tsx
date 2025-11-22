@@ -1,19 +1,32 @@
 import { Link, Stack } from 'expo-router';
-import { Text, View, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
+import { Text, View, StyleSheet, ScrollView, TouchableOpacity, Platform, ImageBackground } from 'react-native';
 import lessonsData from '../data/lessons.json';
 
 export default function UnitA() {
+const backgroundImage = Platform.OS === 'web' 
+    ? require('../assets/images/background-desktop.png')
+    : require('../assets/images/background-mobile.png');
+  
+
+    
     const lessons = lessonsData.lessons || [];
 
     return (
         <>
             <Stack.Screen
                 options={{
-                    title: 'Jazz Piano App',
-                    headerTintColor: '#fff',
-                    headerStyle: { backgroundColor: 'rgba(231,71,223,0.5)' },
+                    title: 'Unit A: Basic Jazz Chords',
+                    headerTintColor: '#ffffffff',
+                    headerStyle: { backgroundColor: 'rgba(0, 0, 0, 1)', },
+                    headerShadowVisible: false,
                 }}
             />
+
+            <ImageBackground 
+                    source={backgroundImage}
+                    style={styles.container}
+                    resizeMode="cover"
+                  >
 
             <ScrollView contentContainerStyle={styles.container}>
                 {lessons.map((lesson) => (
@@ -40,6 +53,7 @@ export default function UnitA() {
                     </Link>
                 ))}
             </ScrollView>
+            </ImageBackground>
         </>
     );
 }
@@ -47,10 +61,11 @@ export default function UnitA() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#0b073aff",
-        padding: 20,
-        justifyContent: 'flex-start',
-        alignItems: 'stretch',
+        width: '100%',
+        height: '100%',
+        padding: 0,
+        justifyContent: "center",
+        alignItems: "center",
     },
     text: {
         fontSize: 18,
